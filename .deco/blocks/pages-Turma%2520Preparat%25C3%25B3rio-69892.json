@@ -1,0 +1,50 @@
+{
+  "__resolveType": "website/pages/Page.tsx",
+  "sections": [
+    {
+      "__resolveType": "Header"
+    },
+    {
+      "__resolveType": "site/sections/Category/CategoryBanner.tsx",
+      "banners": [
+        {
+          "image": {
+            "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11597/479e8424-8bbd-4d4c-8a31-81370c18ad31",
+            "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11597/479e8424-8bbd-4d4c-8a31-81370c18ad31"
+          },
+          "matcher": "/turma/preparatorio"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Institutional/PageContent.tsx",
+      "content": "<p><strong><span style=\"font-size: 19pt\">Preparatório </span></strong></p><p></p><p>A Turma de <strong>Preparatório</strong> é ideal para alunos que estão começando a se aprofundar na técnica do ballet. Nesta fase, os exercícios são focados em desenvolver flexibilidade, força muscular e equilíbrio. Os alunos também começam a explorar a expressão artística e a musicalidade, aprendendo a interpretar a música e a expressar emoções através dos movimentos.</p>",
+      "pageType": "Horizontal",
+      "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/ballet-helly-batista/293be778-6bf5-40a8-85e5-5ff2f82c0a24/3-(2).webp",
+      "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/ballet-helly-batista/b6f6ef2d-decc-4fca-985b-f5b5a7a0bc2a/3-(2).webp"
+    },
+    {
+      "__resolveType": "Title Vejas mais cursos "
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Carrousel Grid Mobile"
+      }
+    },
+    {
+      "__resolveType": "site/sections/GoogleMaps.tsx"
+    },
+    {
+      "__resolveType": "website/sections/Rendering/SingleDeferred.tsx",
+      "section": {
+        "__resolveType": "FooterBallet"
+      }
+    }
+  ],
+  "name": "Turma Preparatório",
+  "path": "/turma/preparatorio",
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  }
+}

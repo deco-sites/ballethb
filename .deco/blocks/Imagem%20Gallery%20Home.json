@@ -1,0 +1,30 @@
+{
+  "__resolveType": "site/sections/Images/ImageGallery.tsx",
+  "banners": [
+    {
+      "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/ballet-helly-batista/a00de75c-3086-4a3a-a841-dd4f39aeb8bf/7-(2).webp",
+      "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/ballet-helly-batista/cd0f1b79-bbd8-4425-8b55-1d0aea2be79b/7-(2).webp",
+      "alt": "Ballet",
+      "href": "/"
+    },
+    {
+      "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/ballet-helly-batista/379ccb9b-82c2-4428-948e-9a4df4ebcfc5/3-(1).webp",
+      "alt": "ballet ",
+      "href": "/",
+      "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/ballet-helly-batista/0bcb4701-d0a2-4c34-9947-a8634b2bdd66/3-(1).webp"
+    },
+    {
+      "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/ballet-helly-batista/1d5838fb-cc42-4483-882d-4e099602bdf0/IMG_6110.jpg",
+      "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/ballet-helly-batista/d7f38c33-0ffb-4ddf-88b8-5b765a6d8cdf/IMG_6110.jpg",
+      "alt": "Ballet 02",
+      "href": "/"
+    },
+    {
+      "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/ballet-helly-batista/6e145a3d-4c23-49c5-8938-2f49c9597f95/5-(4).webp",
+      "alt": "Ballet 3",
+      "href": "/",
+      "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/ballet-helly-batista/075d3c96-ff6a-44e4-9ccc-2564971a56a1/5-(4).webp"
+    }
+  ],
+  "title": "Galeria"
+}

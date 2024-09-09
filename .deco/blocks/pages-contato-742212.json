@@ -1,0 +1,51 @@
+{
+  "name": "contato",
+  "path": "/contato",
+  "sections": [
+    {
+      "__resolveType": "Header"
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Institutional/InstitutionalPage.tsx",
+        "title": "<h1>Ballet Helly Batista</h1>",
+        "hide": {
+          "block1": false,
+          "block2": false,
+          "block3": false,
+          "timeline": true
+        },
+        "block1": {
+          "text": "<h1><span style=\"font-size: 28pt\">Entre em Contato </span></h1>",
+          "backgroundImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/ballet-helly-batista/bd799684-e9cd-4365-bed3-f83ab482f392/5-(6).webp"
+        },
+        "block2": {
+          "text": "<p><strong>Whatsaap:</strong>  (86)99526-3835</p><p></p><p><strong>Endereço:</strong>  Rua Marcos Parente, 2683. Fátima. Cep: 64.049-544</p><p></p><p></p><p></p><p></p>",
+          "backgroundImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/ballet-helly-batista/538ea859-e3c7-4385-aa52-4ec68c88fc7e/3-(3).webp"
+        },
+        "block3": {
+          "text": "<p></p>",
+          "backgroundImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/ballet-helly-batista/23cd5c0e-3e34-46b6-b33d-1f315ed9d4bf/1-(8).webp"
+        },
+        "backgroundImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/ballet-helly-batista/4f170e10-0862-48ef-a5bf-6e289a709c30/5-(6).webp"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/SingleDeferred.tsx",
+      "section": {
+        "__resolveType": "site/sections/GoogleMaps.tsx"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/SingleDeferred.tsx",
+      "section": {
+        "__resolveType": "FooterBallet"
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

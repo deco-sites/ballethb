@@ -1,0 +1,12 @@
+{
+  "__resolveType": "site/sections/BalletSection.tsx",
+  "description": "<p style=\"text-align: justify\">Fundada em 1989, a Escola de Ballet Helly Batista é uma instituição renomada em Teresina, dedicada à excelência no ensino do ballet clássico. Com mais de três décadas de história, nossa escola não apenas promove a arte do ballet, mas também tem sido um verdadeiro lugar de talentos reconhecidos nacional e internacionalmente.</p>",
+  "imagePosition": "right",
+  "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/ballet-helly-batista/04d8d335-85e5-4716-8b0d-b8b1470123bb/1-(2).webp",
+  "title": "<p></p>",
+  "subTitle": "<h1>Ballet Helly Batista</h1>",
+  "colorTitle": "#5D5656",
+  "colorSubTitle": "#000000",
+  "colorDescription": "#000000",
+  "href": "/sobre-nos"
+}

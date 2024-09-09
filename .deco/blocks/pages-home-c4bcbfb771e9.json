@@ -1,0 +1,37 @@
+{
+  "name": "Home",
+  "sections": [
+    {
+      "__resolveType": "Header"
+    },
+    {
+      "__resolveType": "Banner Hero"
+    },
+    {
+      "__resolveType": "BalletSection"
+    },
+    {
+      "__resolveType": "website/sections/Rendering/SingleDeferred.tsx",
+      "section": {
+        "__resolveType": "Carrousel Grid Mobile"
+      }
+    },
+    {
+      "__resolveType": "Imagem Gallery Home"
+    },
+    {
+      "__resolveType": "website/sections/Rendering/SingleDeferred.tsx",
+      "section": {
+        "__resolveType": "site/sections/GoogleMaps.tsx"
+      }
+    },
+    {
+      "__resolveType": "FooterBallet"
+    }
+  ],
+  "__resolveType": "website/pages/Page.tsx",
+  "path": "/",
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  }
+}

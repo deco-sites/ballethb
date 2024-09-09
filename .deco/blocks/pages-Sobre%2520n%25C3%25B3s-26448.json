@@ -1,0 +1,88 @@
+{
+  "name": "Sobre nós",
+  "sections": [
+    {
+      "__resolveType": "Header"
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Institutional/InstitutionalPage.tsx",
+        "title": "<h1>Ballet Helly Batista</h1>",
+        "hide": {
+          "block1": false,
+          "block2": false,
+          "block3": false,
+          "timeline": true
+        },
+        "block1": {
+          "text": "<h1><span style=\"font-size: 28pt\">Ballet Helly Batista</span></h1>",
+          "backgroundImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/ballet-helly-batista/bd799684-e9cd-4365-bed3-f83ab482f392/5-(6).webp"
+        },
+        "block2": {
+          "text": "<p></p><p><span style=\"font-size: 11pt\">Fundada em 1989, a </span><strong><span style=\"font-size: 11pt\">Escola de Ballet Helly Batista</span></strong><span style=\"font-size: 11pt\"> é uma instituição renomada em Teresina, dedicada à excelência no ensino do ballet clássico. Com mais de três décadas de história, nossa escola não apenas promove a arte do ballet, mas também tem sido um verdadeiro lugar de talentos reconhecidos nacional e internacionalmente.</span></p><p></p><p></p><p></p><p></p>",
+          "backgroundImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/ballet-helly-batista/be44ceff-b06a-47f7-a920-2de13d579291/3-(1).webp"
+        },
+        "block3": {
+          "text": "<h2><strong><span style=\"font-size: 12pt\">Reconhecida Nacional e Internacionalmente</span></strong></h2><p><span style=\"font-size: 11pt\">Ao longo dos anos, a </span><strong><span style=\"font-size: 11pt\">Escola de Ballet Helly Batista</span></strong><span style=\"font-size: 11pt\"> conquistou diversos prêmios em festivais nacionais e internacionais, solidificando sua reputação como uma das principais instituições de ensino de ballet. Nossos alunos têm se destacado em competições e eventos ao redor do mundo, muitos deles recebendo bolsas de estudo em prestigiadas instituições de ballet em Nova York, Rússia, Flórida, entre outros. Esses talentos não apenas concluíram suas formações em algumas das mais renomadas academias internacionais, mas também seguiram carreiras brilhantes como bailarinos profissionais, atuando em companhias renomadas globalmente.</span></p>",
+          "backgroundImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/ballet-helly-batista/23cd5c0e-3e34-46b6-b33d-1f315ed9d4bf/1-(8).webp"
+        },
+        "backgroundImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/ballet-helly-batista/4f170e10-0862-48ef-a5bf-6e289a709c30/5-(6).webp"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Institutional/InstitutionalPage.tsx",
+        "title": "<p>Ballet </p>",
+        "hide": {
+          "block3": false,
+          "timeline": true,
+          "block1": true
+        },
+        "block2": {
+          "backgroundImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/ballet-helly-batista/659dbf65-9477-4264-9d18-9416f37c1cb7/5-(4).webp",
+          "text": "<h2><strong><span style=\"font-size: 12pt\">Metodologia Vaganova</span></strong></h2><p></p><p><span style=\"font-size: 11pt\">Na </span><strong><span style=\"font-size: 11pt\">Escola de Ballet Helly Batista</span></strong><span style=\"font-size: 11pt\">, acreditamos que a </span><strong><span style=\"font-size: 11pt\">Metodologia Vaganova</span></strong><span style=\"font-size: 11pt\"> oferece o caminho mais eficaz para o desenvolvimento dos nossos alunos. Esta metodologia clássica, desenvolvida na Rússia, é conhecida por sua abordagem rigorosa e detalhada, que promove a técnica e a expressão artística com um equilíbrio perfeito. Com a Vaganova, nossos alunos recebem uma formação sólida e abrangente, que não só aprimora suas habilidades técnicas, mas também fortalece sua capacidade expressiva e interpretativa.</span></p><h2></h2>"
+        },
+        "block3": {
+          "text": "<h2><strong><span style=\"font-size: 11pt\">Nosso Objetivo</span></strong></h2><p></p><p><span style=\"font-size: 11pt\">O objetivo da </span><strong><span style=\"font-size: 11pt\">Escola de Ballet Helly Batista</span></strong><span style=\"font-size: 11pt\"> é proporcionar uma formação completa e de alta qualidade em ballet clássico, que não apenas desenvolva as habilidades técnicas dos alunos, mas também os inspire a alcançar seu potencial máximo. Buscamos cultivar a paixão pela dança, promover o crescimento pessoal e artístico, e preparar nossos alunos para se destacarem tanto no cenário nacional quanto internaciona</span></p>"
+        },
+        "backgroundImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/ballet-helly-batista/daa03b69-6661-4de9-8ba9-a44f82bdb672/5-(6).webp"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Content/Title.tsx",
+        "title": "Descubra nossas turmas e encontre a sua",
+        "fontSize": "Normal",
+        "alignment": "center",
+        "colorReverse": false,
+        "description": "Na Escola de Ballet Helly Batista, oferecemos amplas opções de turmas para atender diferentes faixas etárias e níveis de experiência. Explore as opções abaixo para encontrar a turma ideal para você ou para seu filho(a)."
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Carrousel Grid Mobile"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/SingleDeferred.tsx",
+      "section": {
+        "__resolveType": "site/sections/GoogleMaps.tsx"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/SingleDeferred.tsx",
+      "section": {
+        "__resolveType": "FooterBallet"
+      }
+    }
+  ],
+  "__resolveType": "website/pages/Page.tsx",
+  "path": "/sobre-nos",
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  }
+}

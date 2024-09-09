@@ -1,0 +1,30 @@
+{
+  "__resolveType": "site/sections/FooterBallet.tsx",
+  "instagramImages": [
+    {
+      "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11597/dd8d256d-ea61-4d02-a67f-0ae5ce2be0ef",
+      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/ballet-helly-batista/f74b4eba-9b2c-41db-981b-5c3df1e88332/3-(2).webp"
+    },
+    {
+      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/ballet-helly-batista/cd8cc099-62ea-4217-af9d-42409d664cad/6-(3).webp"
+    },
+    {
+      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/ballet-helly-batista/502cdaa5-bea3-4a46-b9a3-cc41744a7d25/2-(4).webp"
+    },
+    {
+      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/ballet-helly-batista/40c8e4e6-8a3f-4dbf-b284-d10e3a3e6a43/4-(2).webp"
+    },
+    {
+      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/ballet-helly-batista/ae8eac25-3302-4acb-ac47-2dc51d338057/3.webp"
+    },
+    {
+      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/ballet-helly-batista/c1662661-3d0f-492a-9f87-7b6d943a9d35/5-(2).webp"
+    }
+  ],
+  "logo": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11597/7cbd35d1-1eca-460b-ac31-3ff96895b570",
+  "phone": "86995263835",
+  "address": "<p>Rua Marcos Parente, 2683. Fátima. Cep: 64.049-544</p>",
+  "title": "<p>Contato </p>",
+  "hours": "Segunda à  sexta das 8:00 as 21h ",
+  "news": "<p>Em breve, mais novidades no nosso site.</p>"
+}

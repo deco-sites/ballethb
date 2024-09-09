@@ -1,0 +1,53 @@
+{
+  "__resolveType": "website/pages/Page.tsx",
+  "sections": [
+    {
+      "__resolveType": "Header"
+    },
+    {
+      "__resolveType": "site/sections/Category/CategoryBanner.tsx",
+      "banners": [
+        {
+          "image": {
+            "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11597/479e8424-8bbd-4d4c-8a31-81370c18ad31",
+            "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11597/479e8424-8bbd-4d4c-8a31-81370c18ad31"
+          },
+          "matcher": "/turma/basico"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Institutional/PageContent.tsx",
+      "content": "<h1><strong><span style=\"font-size: 24pt\">Turma de Básico</span></strong></h1><p></p><p></p><p>A Turma de <strong>Básico</strong> é a etapa onde os alunos iniciam o estudo da técnica clássica de forma estruturada. É a fase crucial para construir uma base sólida na técnica do ballet, com ênfase na postura correta e nos passos fundamentais, como pliés, tendus e relevés. A consciência corporal e a coordenação são desenvolvidas para preparar os alunos para os níveis seguintes.</p>",
+      "pageType": "Horizontal",
+      "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/ballet-helly-batista/9ecf1390-94a2-4a55-ba3c-50a3a53a5f5a/2-(5).webp",
+      "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/ballet-helly-batista/e6d2769e-b5a3-48e5-ade9-3faac34e5d37/2-(5).webp"
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Title Vejas mais cursos "
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Carrousel Grid Mobile"
+      }
+    },
+    {
+      "__resolveType": "site/sections/GoogleMaps.tsx"
+    },
+    {
+      "__resolveType": "website/sections/Rendering/SingleDeferred.tsx",
+      "section": {
+        "__resolveType": "FooterBallet"
+      }
+    }
+  ],
+  "name": "Turma Básico",
+  "path": "/turma/basico",
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  }
+}

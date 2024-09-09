@@ -1,0 +1,56 @@
+{
+  "__resolveType": "website/pages/Page.tsx",
+  "sections": [
+    {
+      "__resolveType": "Header"
+    },
+    {
+      "__resolveType": "site/sections/Category/CategoryBanner.tsx",
+      "banners": [
+        {
+          "image": {
+            "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11597/479e8424-8bbd-4d4c-8a31-81370c18ad31",
+            "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11597/479e8424-8bbd-4d4c-8a31-81370c18ad31"
+          },
+          "matcher": "/turma/baby-fraldinha"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Institutional/PageContent.tsx",
+      "content": "<h1><strong><span style=\"font-size: 24pt\">Baby Fraldinha</span></strong></h1><p></p><pre><code></code></pre><p>Nossas turmas de Baby Fraldinha são projetadas para introduzir os pequenos ao mundo encantador do ballet clássico de maneira lúdica e criativa. Através de atividades planejadas com muito cuidado, buscamos oferecer uma experiência positiva e divertida, estimulando habilidades básicas de movimento e coordenação. Usamos jogos, histórias e músicas para ensinar conceitos fundamentais do ballet, como postura e equilíbrio, de forma natural e envolvente.</p><p></p>",
+      "pageType": "Horizontal",
+      "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/ballet-helly-batista/1bac8e33-7336-4561-bc90-e43f516828c6/1-(7).webp",
+      "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/ballet-helly-batista/15981858-174a-48da-829a-21d1d78da8b7/1-(7).webp"
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Title Vejas mais cursos "
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Carrousel Grid Mobile"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/GoogleMaps.tsx"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/SingleDeferred.tsx",
+      "section": {
+        "__resolveType": "FooterBallet"
+      }
+    }
+  ],
+  "name": "Turma Ballet Talento Copy",
+  "path": "/turma/baby-fraldinha",
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  }
+}

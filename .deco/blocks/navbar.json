@@ -1,0 +1,29 @@
+{
+  "items": [
+    {
+      "url": "/",
+      "children": [],
+      "name": "Home",
+      "image": []
+    },
+    {
+      "children": [],
+      "name": "Sobre Nós ",
+      "url": "/sobre-nos",
+      "@type": "SiteNavigationElement"
+    },
+    {
+      "children": [],
+      "image": [],
+      "name": "Cursos",
+      "url": "/cursos"
+    },
+    {
+      "children": [],
+      "image": [],
+      "name": "Contato",
+      "url": "/contato"
+    }
+  ],
+  "__resolveType": "commerce/loaders/navbar.ts"
+}

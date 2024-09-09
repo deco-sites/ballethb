@@ -1,0 +1,60 @@
+{
+  "name": "Turma Ballet Talento",
+  "sections": [
+    {
+      "__resolveType": "Header"
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Category/CategoryBanner.tsx",
+        "banners": [
+          {
+            "image": {
+              "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/ballet-helly-batista/0d768243-f480-4067-8e9d-f2cf89c66f9b/Background-is-pink-with-ballet-pointe-shoes",
+              "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/ballet-helly-batista/0d768243-f480-4067-8e9d-f2cf89c66f9b/Background-is-pink-with-ballet-pointe-shoes"
+            },
+            "matcher": "/turma/ballet-talento",
+            "title": "Turma Talento"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "site/sections/Institutional/PageContent.tsx",
+      "pageType": "Horizontal",
+      "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/ballet-helly-batista/0450a01f-7a3b-4ffe-96b3-0838e2f94437/6-(4).webp",
+      "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/ballet-helly-batista/48e2df9d-615f-4d99-8aea-ef1a75c5fc7b/6-(4).webp",
+      "content": "<h1><strong><span style=\"font-size: 25pt\">Turma Talento</span></strong></h1><p></p><p></p><p>Na Turma Talento, os alunos atingem um nível mais avançado de técnica e expressão. Esta fase é focada no aperfeiçoamento das habilidades adquiridas e na preparação para a execução de coreografias complexas e apresentações.</p>"
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Title Vejas mais cursos "
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Carrousel Grid Mobile"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/SingleDeferred.tsx",
+      "section": {
+        "__resolveType": "site/sections/GoogleMaps.tsx"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/SingleDeferred.tsx",
+      "section": {
+        "__resolveType": "FooterBallet"
+      }
+    }
+  ],
+  "__resolveType": "website/pages/Page.tsx",
+  "path": "/turma/ballet-talento",
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  }
+}

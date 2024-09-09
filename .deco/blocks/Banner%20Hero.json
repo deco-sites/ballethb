@@ -1,0 +1,38 @@
+{
+  "__resolveType": "site/sections/Images/Carousel.tsx",
+  "images": [
+    {
+      "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/ballet-helly-batista/6f9fc5f4-4ff7-406a-bf88-46b87084699e/2.webp",
+      "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/ballet-helly-batista/17bcc45c-eb12-4513-bf58-a3c88e1553fe/1-(1).webp",
+      "action": {
+        "href": "#",
+        "label": "Ballery"
+      },
+      "alt": "Ballet 1"
+    },
+    {
+      "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/ballet-helly-batista/734ce466-06e3-48ed-a66e-26d74d4731b7/4.webp",
+      "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/ballet-helly-batista/ee0919a8-98e5-46cf-9478-5bb383e7d342/2-(1).webp",
+      "alt": "Woman",
+      "action": {
+        "href": "#",
+        "label": "Ballerina"
+      }
+    }
+  ],
+  "preload": true,
+  "showArrow": true,
+  "layout": {
+    "bannerGrid": {
+      "cards": [],
+      "layout": {
+        "numberOfSliders": {
+          "mobile": 1,
+          "desktop": 3
+        }
+      }
+    }
+  },
+  "showDotz": true,
+  "interval": 5
+}

@@ -1,0 +1,53 @@
+{
+  "__resolveType": "website/pages/Page.tsx",
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "sections": [
+    {
+      "__resolveType": "Header"
+    },
+    {
+      "__resolveType": "site/sections/Category/CategoryBanner.tsx",
+      "banners": [
+        {
+          "image": {
+            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/ballet-helly-batista/0d768243-f480-4067-8e9d-f2cf89c66f9b/Background-is-pink-with-ballet-pointe-shoes",
+            "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11597/479e8424-8bbd-4d4c-8a31-81370c18ad31"
+          },
+          "matcher": "/turma/intermediario"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Institutional/PageContent.tsx",
+      "content": "<h1><strong><span style=\"font-size: 24pt\">Turmas de Intermediário I e II </span></strong></h1><p></p><p></p><p>No <strong>Intermediário I</strong>, os alunos aprofundam suas habilidades técnicas e começam a se preparar para estudos mais avançados. O foco está no aperfeiçoamento dos movimentos fundamentais e no refino da técnica clássica. É uma fase emocionante que prepara os alunos para o trabalho com sapatilhas de ponta e desafios mais complexos.</p><p></p><p> No <strong>Intermediário I</strong>, os alunos aprofundam suas habilidades técnicas e começam a se preparar para estudos mais avançados. O foco está no aperfeiçoamento dos movimentos fundamentais e no refino da técnica clássica. É uma fase emocionante que prepara os alunos para o trabalho com sapatilhas de ponta e desafios mais complexos.</p>",
+      "pageType": "Horizontal",
+      "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/ballet-helly-batista/5285a048-5606-4854-910f-bb1163f0c24b/000A7332-Editar-(1).jpg",
+      "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/ballet-helly-batista/f254757e-22e5-45d5-a35d-252569e0591b/000A7332-Editar-(1).jpg"
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Title Vejas mais cursos "
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Carrousel Grid Mobile"
+      }
+    },
+    {
+      "__resolveType": "site/sections/GoogleMaps.tsx"
+    },
+    {
+      "__resolveType": "website/sections/Rendering/SingleDeferred.tsx",
+      "section": {
+        "__resolveType": "FooterBallet"
+      }
+    }
+  ],
+  "name": "Intermediário I e II ",
+  "path": "/turma/intermediario"
+}
