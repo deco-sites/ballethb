@@ -63,7 +63,6 @@
       }
     ]
   },
-  "colorScheme": "any",
   "otherStyles": {
     "--rounded-box": "1rem",
     "--rounded-badge": "1.9rem",
@@ -71,7 +70,6 @@
     "--tab-border": "1px",
     "--tab-radius": "0.5rem"
   },
-  "mode": "dark",
   "mainColors": {
     "primary": "#CB9C98",
     "base-100": "#FAFAFA",

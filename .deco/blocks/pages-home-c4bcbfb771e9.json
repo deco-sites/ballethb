@@ -5,7 +5,10 @@
       "__resolveType": "Header"
     },
     {
-      "__resolveType": "Banner Hero"
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Banner Hero"
+      }
     },
     {
       "__resolveType": "BalletSection"
