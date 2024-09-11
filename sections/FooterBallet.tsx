@@ -1,10 +1,17 @@
 import type { HTMLWidget, ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import WhatsApp from "../components/ui/Whatsapp.tsx";
+import Icon, { SocialIcons } from "../components/ui/Icon.tsx";
 
 export interface Image {
   src: ImageWidget;
 }
+
+export interface SocialItem {
+  label: SocialIcons
+  link: string;
+}
+
 
 interface FooterProps {
   /**
@@ -36,17 +43,18 @@ interface FooterProps {
   news?: HTMLWidget;
 
   logo?: ImageWidget;
+
+  social?: SocialItem[];
 }
 
 export default function Footer({
   title = "CONTACT & FOLLOW US",
+  social, 
   address = "186 North Collins Street, Chicago",
   phone = "(847)704-4427",
   hours = "Mon - Sat 8:00 - 19:00",
   instagramImages,
   logo,
-  news =
-    '<div class="space-y-2"><p>Charming body language</p><p>Today may be just like</p><p>Rhythm, mind & footstep</p></div>',
 }: FooterProps) {
   return (
     <footer
@@ -79,8 +87,16 @@ export default function Footer({
             </div>
           </div>
           <div>
-            <h3 class="text-lg font-bold mb-4">Novidades</h3>
-            <div dangerouslySetInnerHTML={{ __html: news }} />
+            <h3 class="text-lg font-bold mb-4">Rede Social</h3>
+            <ul class="flex gap-4">
+          {social && social.length >  0 &&   social.map((item) => (
+              <li>
+                <a href={item.link}>
+                    <Icon width={24} height={23} id={item.label} class="w-8 h-[31px] lg:w-6 lg:h-[23px] 2xl:w-[32px] 2xl:h-[31px]" />
+                </a>
+              </li>
+            ))}
+          </ul>
           </div>
         </div>
       </div>
