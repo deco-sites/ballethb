@@ -14,10 +14,16 @@
       "__resolveType": "BalletSection"
     },
     {
-      "__resolveType": "Carrousel Grid Mobile"
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Carrousel Grid Mobile"
+      }
     },
     {
-      "__resolveType": "Imagem Gallery Home"
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Imagem Gallery Home"
+      }
     },
     {
       "__resolveType": "website/sections/Rendering/SingleDeferred.tsx",
