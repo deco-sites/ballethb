@@ -1,5 +1,6 @@
 import type { Color, ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
+import Button from "../components/ui/Button.tsx";
 
 export interface Props {
   image?: ImageWidget;
@@ -25,9 +26,15 @@ export interface Props {
   
   /**@title Endereço de link */
   href?: string; 
+
+  button?:{
+    name: string; 
+    number: number;
+  }
 }
 
 export default function BalletDreamSection({
+  button, 
   image,
   imagePosition,
   href="/sobre-nos",
@@ -79,6 +86,9 @@ export default function BalletDreamSection({
         >
           Leia Mais
         </a>
+        
+        {button && (  <Button name={button.name} number={button.number} />)}
+      
       </div>
     </div>
   );

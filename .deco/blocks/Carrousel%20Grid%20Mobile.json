@@ -66,7 +66,10 @@
       },
       "showArrows": true
     },
-    "title": "Cursos"
+    "title": "Cursos",
+    "button": {
+      "name": "Solicite uma Aula Experimental"
+    }
   },
   "lcp": true
 }

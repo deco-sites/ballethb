@@ -25,6 +25,11 @@ interface Props extends SectionHeaderProps {
    * @minItems 4
    */
   banners?: Banner[];
+
+  button?: {
+    name: string;
+    number: number;
+  };
 }
 
 function Banner({ mobile, desktop, alt, href }: Banner) {
@@ -57,6 +62,7 @@ function Banner({ mobile, desktop, alt, href }: Banner) {
 }
 
 export default function Gallery({
+  button,
   title,
   cta,
   banners = [
@@ -113,7 +119,7 @@ export default function Gallery({
   };
 
   return (
-    <Section.Container class="imageGallery w-full max-w-[1440px] m-auto">
+    <Section.Container class="imageGallery w-full items-center flex-col justify-center max-w-[1440px] m-auto">
       <Section.Header title={title} cta={cta} />
 
       <ul class="grid gap-2 sm:gap-4 grid-cols-1 sm:grid-cols-2 px-5 sm:px-0">
@@ -123,6 +129,25 @@ export default function Gallery({
           </li>
         ))}
       </ul>
+      
+      {button && (
+        <a
+          href={`https://wa.me/${button.number}`}
+          target="_blank"
+          aria-label="Converse no WhatsApp"
+          alt="Solicite um aula expeimental"
+          class="btn mt-5 lg:w-[296px] md:w-[140px] border-0 !bg-primary rounded-[25px] py-[14px] text-16 uppercase hover:!brightness-90  duration-300"
+        >
+          <span
+            style="margin-right:0;"
+            class="text-sm text-white flex items-center justify-center"
+          >
+            {button.name}
+          </span>
+        </a>
+      )}
+
+
       <script
         type="module"
         dangerouslySetInnerHTML={{

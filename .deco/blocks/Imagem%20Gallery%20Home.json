@@ -26,5 +26,9 @@
       "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/ballet-helly-batista/075d3c96-ff6a-44e4-9ccc-2564971a56a1/5-(4).webp"
     }
   ],
-  "title": "Galeria"
+  "title": "Galeria",
+  "button": {
+    "name": "Entre em contato",
+    "number": 86995263835
+  }
 }
