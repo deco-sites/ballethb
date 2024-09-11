@@ -18,7 +18,7 @@ export default function GoogleMaps({
     <div className="flex flex-col items-center m-auto justify-center w-full max-w-[1440px] px-4  pt-20 lg:pb-28">
       <div class=" flex items-start gap-2 justify-center pb-6">
         <Icon id="home_pin" class="" size={device === "desktop" ? 45 : 30} />
-        <h2 className="mb-4 uppercase w-48 lg:w-auto text-center sm::text-start text-black text-3xl lg:text-5xl pb-6 ">
+        <h2 className="mb-4 uppercase w-48 lg:w-auto text-center sm::text-start text-black text-3xl lg:text-5xl !pb-6 !pt-0 ">
           Ballet Helly Batista
         </h2>
       </div>
