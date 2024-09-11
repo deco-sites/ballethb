@@ -38,10 +38,7 @@
       }
     },
     {
-      "__resolveType": "website/sections/Rendering/SingleDeferred.tsx",
-      "section": {
-        "__resolveType": "FooterBallet"
-      }
+      "__resolveType": "FooterBallet"
     }
   ],
   "seo": {
