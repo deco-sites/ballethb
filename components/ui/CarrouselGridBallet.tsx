@@ -4,6 +4,7 @@ import { clx } from "../../sdk/clx.ts";
 import { Picture, Source } from "apps/website/components/Picture.tsx";
 import Slider from "./Slider.tsx";
 import Icon from "./Icon.tsx";
+import { useDevice } from "deco/hooks/useDevice.ts";
 
 /**
  * @title title
@@ -65,6 +66,8 @@ export default function BannerCard(
     4: "w-1/4",
     5: "w-1/5",
   };
+
+  const device = useDevice(); 
   return (
     <div class="w-full max-w-[1440px] m-auto mb-20 lg:mb-28 flex flex-col items-center justify-center gap-6 lg:my-8 font-soleil lg:px-4 overflow-hidden">
       <div class="w-full">
@@ -106,13 +109,16 @@ export default function BannerCard(
                       width={800}
                       height={800}
                     />
-                    <Source
-                      media="(min-width: 768px)"
-                      fetchPriority={lcp ? "high" : "auto"}
-                      src={card.image}
-                      width={413}
-                      height={275}
-                    />
+                    {device === "desktop" && (
+                      <Source
+                        media="(min-width: 768px)"
+                        fetchPriority={lcp ? "high" : "auto"}
+                        src={card.image}
+                        width={413}
+                        height={275}
+                      />
+                    )}
+
                     <img
                       class="w-full h-full max-w-[413px] lg:max-h-[275px] hover:scale-125 transition-all duration-700 object-contain"
                       loading={lcp ? "eager" : "lazy"}
