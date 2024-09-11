@@ -5,7 +5,6 @@ import { Picture, Source } from "apps/website/components/Picture.tsx";
 import Slider from "./Slider.tsx";
 import Icon from "./Icon.tsx";
 import { useScript } from "deco/hooks/useScript.ts";
-import Button from "./Button.tsx";
 
 /**
  * @title title
@@ -94,7 +93,7 @@ export default function BannerCard(
           class={clx(
             "grid relative  lg:h-auto",
             "grid-cols-[24px_1fr_24px] grid-rows-[1fr_48px_1fr]",
-            "px-0 w-full",
+            "px-0 w-full overflow-hidden",
           )}
         >
           <Slider class="carousel sm:carousel-end row-span-full">
@@ -135,7 +134,7 @@ export default function BannerCard(
                       height={275}
                     />
                     <img
-                      class="w-full h-full max-w-[413px] max-h-[275px] hover:scale-125 transition-all duration-700 object-cover"
+                      class="w-full h-full max-w-[413px] max-h-[275px] hover:scale-125 transition-all duration-700 object-contain"
                       loading={lcp ? "eager" : "lazy"}
                       src={card.image}
                       alt={card.alt}
