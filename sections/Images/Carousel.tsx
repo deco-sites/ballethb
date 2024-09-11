@@ -108,24 +108,27 @@ function BannerItem(
       aria-label={action?.label}
       class="relative block overflow-y-hidden w-full lg:w"
     >
-      {action?.title && (
-        <div class="absolute  h-screen lg:h-auto w-full max-w-[720px] flex flex-col items-center justify-center gap-3  right-0 lg:top-[20%] transform -translate-y-1/2 bg-base-100 bg-opacity-70 z-10  animate-fadeIn lg:right-[10%] ">
-          <div class=" w-[80%]  lg:w-[520px] flex flex-col items-center justify-center ">
-            <h1 class=" text-3xl lg:text-[46px] text-[#DDDCDC] text-center capitalize">
-              {action.title}
-            </h1>
-            {action.subTitle && (
-              <p class="uppercase text-3xl lg:text-[42px] text-black text-center">
-                {action.subTitle}
-              </p>
-            )}
-            <span class="w-[140px] h-[1px] mt-6 bg-black"></span>
-          </div>
-          {action.description && (
-            <p class=" text-sm lg:text-base text-[#6c6c6c] pt-6 text-center leading-[24px]">
-              {action.description}
-            </p>
+      {action && (
+        <div
+          class={clx(
+            "absolute h-full w-full top-0 left-0",
+            "flex flex-col justify-center items-center",
+            "px-5 sm:px-0",
+            "sm:left-40 sm:items-start sm:max-w-96",
           )}
+        >
+          <span class=" text-[3.4rem] lg:text-7xl font-bold text-base-100">
+            {action.title}
+          </span>
+          <span class="font-normal text-base text-base-100 pt-4 pb-12">
+            {action.subTitle}
+          </span>
+          <button
+            class="btn btn-primary btn-outline bg-base-100"
+            aria-label={action.label}
+          >
+            {action.label}
+          </button>
         </div>
       )}
 

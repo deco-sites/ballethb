@@ -8,5 +8,9 @@
   "colorTitle": "#5D5656",
   "colorSubTitle": "#000000",
   "colorDescription": "#000000",
-  "href": "/sobre-nos"
+  "href": "/sobre-nos",
+  "button": {
+    "name": "Entre em contato",
+    "number": 86995263837
+  }
 }

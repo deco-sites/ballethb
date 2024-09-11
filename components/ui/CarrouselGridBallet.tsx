@@ -5,6 +5,7 @@ import { Picture, Source } from "apps/website/components/Picture.tsx";
 import Slider from "./Slider.tsx";
 import Icon from "./Icon.tsx";
 import { useScript } from "deco/hooks/useScript.ts";
+import Button from "./Button.tsx";
 
 /**
  * @title title
@@ -29,6 +30,11 @@ export interface BannerCardProps {
     };
     showArrows?: boolean;
   };
+
+  button?: {
+    name: string;
+    number: number;
+  };
 }
 
 export interface Props {
@@ -40,7 +46,7 @@ export default function BannerCard(
 ) {
   const id = useId();
 
-  const { cards, layout } = bannerGrid;
+  const { cards, layout, button } = bannerGrid;
 
   if (!cards || cards.length === 0) {
     return null;
@@ -81,7 +87,7 @@ export default function BannerCard(
   };
 
   return (
-    <div class="triggerSection w-full max-w-[1440px] m-auto mb-20 lg:mb-28 flex flex-col gap-6 lg:my-8 font-soleil lg:px-4 overflow-hidden animate-fadeInLeft">
+    <div class="triggerSection w-full max-w-[1440px] m-auto mb-20 lg:mb-28 flex flex-col items-center justify-center gap-6 lg:my-8 font-soleil lg:px-4 overflow-hidden animate-fadeInLeft">
       <div class="w-full">
         <div
           id={id}
@@ -170,6 +176,23 @@ export default function BannerCard(
         </div>
         <Slider.JS rootId={id} />
       </div>
+
+      {button && (
+        <a
+          href={`https://wa.me/${button.number}`}
+          target="_blank"
+          aria-label="Converse no WhatsApp"
+          alt="Solicite um aula expeimental"
+          class="btn mt-5 lg:w-[296px] md:w-[140px] border-0 !bg-primary rounded-[25px] py-[14px] text-16 uppercase hover:!brightness-90  duration-300"
+        >
+          <span
+            style="margin-right:0;"
+            class="text-sm text-white flex items-center justify-center"
+          >
+            {button.name}
+          </span>
+        </a>
+      )}
 
       <script
         type="module"
