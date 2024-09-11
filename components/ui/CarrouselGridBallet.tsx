@@ -4,7 +4,6 @@ import { clx } from "../../sdk/clx.ts";
 import { Picture, Source } from "apps/website/components/Picture.tsx";
 import Slider from "./Slider.tsx";
 import Icon from "./Icon.tsx";
-import { useScript } from "deco/hooks/useScript.ts";
 
 /**
  * @title title
@@ -66,27 +65,8 @@ export default function BannerCard(
     4: "w-1/4",
     5: "w-1/5",
   };
-
-  const onload = () => {
-    document.addEventListener("DOMContentLoaded", function () {
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("animate-fadeInLeft");
-            observer.unobserve(entry.target); // Para de observar após a animação ser aplicada
-          }
-        });
-      });
-
-      const target = document.querySelector(".triggerSection div");
-      if (target) {
-        observer.observe(target);
-      }
-    });
-  };
-
   return (
-    <div class="triggerSection w-full max-w-[1440px] m-auto mb-20 lg:mb-28 flex flex-col items-center justify-center gap-6 lg:my-8 font-soleil lg:px-4 overflow-hidden animate-fadeInLeft">
+    <div class="w-full max-w-[1440px] m-auto mb-20 lg:mb-28 flex flex-col items-center justify-center gap-6 lg:my-8 font-soleil lg:px-4 overflow-hidden">
       <div class="w-full">
         <div
           id={id}
@@ -192,13 +172,6 @@ export default function BannerCard(
           </span>
         </a>
       )}
-
-      <script
-        type="module"
-        dangerouslySetInnerHTML={{
-          __html: useScript(onload),
-        }}
-      />
     </div>
   );
 }

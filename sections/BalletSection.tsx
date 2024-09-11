@@ -23,21 +23,21 @@ export interface Props {
   description?: string;
 
   imagePosition?: "left" | "right";
-  
-  /**@title Endereço de link */
-  href?: string; 
 
-  button?:{
-    name: string; 
+  /**@title Endereço de link */
+  href?: string;
+
+  button?: {
+    name: string;
     number: number;
-  }
+  };
 }
 
 export default function BalletDreamSection({
-  button, 
+  button,
   image,
   imagePosition,
-  href="/sobre-nos",
+  href = "/sobre-nos",
   colorTitle = "#DDDCDC",
   colorSubTitle = "#00000",
   colorDescription = "#00000",
@@ -86,9 +86,8 @@ export default function BalletDreamSection({
         >
           Leia Mais
         </a>
-        
-        {button && (  <Button name={button.name} number={button.number} />)}
-      
+
+        {button && <Button name={button.name} number={button.number} />}
       </div>
     </div>
   );

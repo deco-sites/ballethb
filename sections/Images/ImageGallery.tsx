@@ -129,7 +129,7 @@ export default function Gallery({
           </li>
         ))}
       </ul>
-      
+
       {button && (
         <a
           href={`https://wa.me/${button.number}`}
@@ -146,7 +146,6 @@ export default function Gallery({
           </span>
         </a>
       )}
-
 
       <script
         type="module"

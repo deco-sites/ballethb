@@ -49,12 +49,15 @@ export default function Footer({
     '<div class="space-y-2"><p>Charming body language</p><p>Today may be just like</p><p>Rhythm, mind & footstep</p></div>',
 }: FooterProps) {
   return (
-    <footer class="bg-primary text-neutral flex flex-col mt-20 lg:mt-0" id="#contato">
+    <footer
+      class="bg-primary text-neutral flex flex-col mt-20 lg:mt-0"
+      id="#contato"
+    >
       <div class="container mx-auto py-8  px-4">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div class="flex flex-col">
             <h3 class="text-lg font-bold mb-4">
-            <span type="module" dangerouslySetInnerHTML={{ __html: title }} />
+              <span type="module" dangerouslySetInnerHTML={{ __html: title }} />
             </h3>
             <span type="module" dangerouslySetInnerHTML={{ __html: address }} />
             <span type="module" dangerouslySetInnerHTML={{ __html: phone }} />
