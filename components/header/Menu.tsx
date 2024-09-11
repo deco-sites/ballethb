@@ -8,7 +8,9 @@ export interface Props {
 function MenuItem({ item }: { item: SiteNavigationElement }) {
   return (
     <a class="flex" href={item.url} alt={`item-${item.name}`}>
-      <div class="py-2 text-sm hover:font-bold uppercase tracking-wider">{item.name}</div>
+      <div class="py-2 text-sm hover:font-bold uppercase tracking-wider">
+        {item.name}
+      </div>
     </a>
   );
 }

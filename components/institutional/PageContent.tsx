@@ -17,7 +17,9 @@ export interface Props {
   content: HTML;
 }
 
-export default function PageContent(props: SectionProps<ReturnType<typeof loader>>) {
+export default function PageContent(
+  props: SectionProps<ReturnType<typeof loader>>,
+) {
   const { device, content, desktop, mobile, pageType = "Horizontal" } = props;
 
   return (
@@ -244,5 +246,3 @@ export const loader = (props: Props, req: Request, ctx: FnContext) => {
     path: url,
   };
 };
-
-

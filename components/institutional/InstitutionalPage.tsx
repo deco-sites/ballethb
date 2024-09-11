@@ -58,7 +58,6 @@ export function loader(props: Props, req: Request, ctx: FnContext) {
 function InstitutionalPage(props: SectionProps<typeof loader>) {
   const {
     backgroundImage,
-    title,
     block1,
     block2,
     block3,
@@ -80,6 +79,9 @@ function InstitutionalPage(props: SectionProps<typeof loader>) {
         <style
           dangerouslySetInnerHTML={{
             __html: `
+                 h2{
+                  padding: 16px 0; 
+                 }
                 .institucionalBanner>.content {
                   width: 100%;
                   max-width: 1150px;
@@ -382,7 +384,7 @@ function InstitutionalPage(props: SectionProps<typeof loader>) {
                     .institucionalBanner>.content h1,.institucionalBanner>.content h2 {
                         font-size:22px;
                         box-sizing: border-box;
-                        padding: 0 14px
+                        padding: 16px 14px
                     }
                     .institucionalBanner__texts {
                         width:100%
@@ -468,7 +470,7 @@ function InstitutionalPage(props: SectionProps<typeof loader>) {
               </div>
             )}
             {!hide.block2 && (
-              <div class="institucionalInfo__2 table rounded-none w-full py-9 px-0 mt-[56px] bg-[#efefef]">
+              <div class="institucionalInfo__2 table rounded-none w-full py-9 px-0 mt-4 bg-[#efefef]">
                 <div class="content block w-full max-w-[1150px] ml-auto mr-auto pb-[40px]">
                   <span class="institucionalInfo__2-img float-right">
                     {block2 && <img src={block2?.backgroundImage} />}
@@ -597,7 +599,7 @@ function InstitutionalPage(props: SectionProps<typeof loader>) {
                   backgroundSize: "cover",
                 }}
               >
-                <div class="content block w-full px-4 max-w-[1150px] ml-auto mr-auto">
+                <div class="content block w-full px-4 max-w-[1150px] ml-auto mr-auto ">
                   {block3 && (
                     <div
                       dangerouslySetInnerHTML={{ __html: block3?.text || "" }}
