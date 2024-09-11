@@ -1,6 +1,19 @@
 import { asset } from "$fresh/runtime.ts";
 import type { JSX } from "preact";
 
+export type SocialIcons =
+  | "Linkedin"
+  | "Pinterest"
+  | "YouTube"
+  | "Tiktok"
+  | "WhatsApp"
+  | "Instagram"
+  | "Facebook"
+  | "YouTubeOutline"
+  | "WhatsAppOutline"
+  | "InstagramOutline"
+  | "FacebookOutline";
+
 export type AvailableIcons =
   | "search"
   | "shopping_bag"
@@ -19,7 +32,18 @@ export type AvailableIcons =
   | "error"
   | "trash"
   | "hamburger"
-  | "WhatsApp";
+  | "WhatsApp"
+  | "Linkedin"
+  | "Pinterest"
+  | "YouTube"
+  | "Tiktok"
+  | "WhatsApp"
+  | "Instagram"
+  | "Facebook"
+  | "YouTubeOutline"
+  | "WhatsAppOutline"
+  | "InstagramOutline"
+  | "FacebookOutline";
 
 interface Props extends JSX.SVGAttributes<SVGSVGElement> {
   /**

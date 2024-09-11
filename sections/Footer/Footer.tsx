@@ -1,6 +1,7 @@
 import { type ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import PoweredByDeco from "apps/website/components/PoweredByDeco.tsx";
+import Icon, { SocialIcons } from "../../components/ui/Icon.tsx";
 
 /** @titleBy title */
 interface Item {
@@ -13,6 +14,13 @@ interface Link extends Item {
   children: Item[];
 }
 
+
+export interface SocialItem {
+  label: SocialIcons
+  link: string;
+}
+
+
 /** @titleBy alt */
 interface Social {
   alt?: string;
@@ -22,7 +30,7 @@ interface Social {
 
 interface Props {
   links?: Link[];
-  social?: Social[];
+  social?: SocialItem[];
   paymentMethods?: Social[];
   policies?: Item[];
   logo?: ImageWidget;
@@ -63,16 +71,10 @@ function Footer({
 
         <div class="flex flex-col sm:flex-row gap-12 justify-between items-start sm:items-center">
           <ul class="flex gap-4">
-            {social.map(({ image, href, alt }) => (
+          {social.map((item) => (
               <li>
-                <a href={href}>
-                  <Image
-                    src={image}
-                    alt={alt}
-                    loading="lazy"
-                    width={24}
-                    height={24}
-                  />
+                <a href={item.link}>
+                    <Icon width={24} height={23} id={item.label} class="w-8 h-[31px] lg:w-6 lg:h-[23px] 2xl:w-[32px] 2xl:h-[31px]" />
                 </a>
               </li>
             ))}

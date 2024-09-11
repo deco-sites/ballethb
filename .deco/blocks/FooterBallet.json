@@ -26,5 +26,19 @@
   "address": "<p>Rua Marcos Parente, 2683. Fátima. Cep: 64.049-544</p>",
   "title": "<p>Contato </p>",
   "hours": "Segunda à  sexta das 8:00 as 21h ",
-  "news": "<p>Em breve, mais novidades no nosso site.</p>"
+  "news": "<p>Em breve, mais novidades no nosso site.</p>",
+  "social": [
+    {
+      "label": "Instagram",
+      "link": "https://www.instagram.com/ballethellybatista/"
+    },
+    {
+      "label": "Facebook",
+      "link": "https://www.facebook.com/ballethellybatista/"
+    },
+    {
+      "label": "WhatsApp",
+      "link": "https://api.whatsapp.com/send/?phone=86995263837&text&type=phone_number&app_absent=0"
+    }
+  ]
 }
