@@ -577,7 +577,7 @@ function InstitutionalPage(props: SectionProps<typeof loader>) {
                   <span class="institucionalInfo__2-img float-right">
                     {block2 && <img src={block2?.backgroundImage} />}
                   </span>
-                  <span class="institucionalInfo__2-texts float-left px-4 text-black mt-[94px] lg:w-[calc(100%-660px)]">
+                  <span class="institucionalInfo__2-texts float-left px-4 text-black mt-4 lg:w-[calc(100%-660px)]">
                     {block2 && (
                       <div
                         dangerouslySetInnerHTML={{ __html: block2?.text || "" }}
@@ -589,7 +589,7 @@ function InstitutionalPage(props: SectionProps<typeof loader>) {
             )}
             {!hide.block3 && (
               <div
-                class="institucionallab table rounded-none w-full pt-[120px] pr-0  pb-5  lg:pb-[80px] pl-0"
+                class="institucionallab table rounded-none w-full pt-4 pr-0  pb-5  lg:pb-[80px] pl-0"
                 style={{
                   background: block3?.backgroundImage
                     ? `url(${block3?.backgroundImage}) center no-repeat`
