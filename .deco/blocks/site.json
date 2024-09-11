@@ -6,9 +6,9 @@
     "noIndexing": false,
     "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11597/2393f442-10e5-4802-b1e6-17e101302e9c",
     "title": "Ballet Helly Batista",
+    "description": "Descubra a Escola de Ballet Helly Batista em Teresina, Piauí. Oferecemos aulas de ballet para todas as idades e níveis. Matricule-se hoje mesmo!",
     "titleTemplate": "%s",
-    "description": "Escola de Ballet em Teresina | Ballet Helly Batista",
-    "descriptionTemplate": "Descubra a Escola de Ballet Helly Batista em Teresina, Piauí. Oferecemos aulas de ballet para todas as idades e níveis. Matricule-se hoje mesmo!"
+    "descriptionTemplate": "%s"
   },
   "theme": {
     "__resolveType": "Deco"
