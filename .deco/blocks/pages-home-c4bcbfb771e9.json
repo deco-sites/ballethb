@@ -14,10 +14,7 @@
       "__resolveType": "BalletSection"
     },
     {
-      "__resolveType": "website/sections/Rendering/SingleDeferred.tsx",
-      "section": {
-        "__resolveType": "Carrousel Grid Mobile"
-      }
+      "__resolveType": "Carrousel Grid Mobile"
     },
     {
       "__resolveType": "Imagem Gallery Home"
