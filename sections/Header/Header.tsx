@@ -6,19 +6,13 @@ import { useSection } from "deco/hooks/useSection.ts";
 import Alert from "../../components/header/Alert.tsx";
 import Menu from "../../components/header/Menu.tsx";
 import NavItem from "../../components/header/NavItem.tsx";
-
-import Searchbar, {
-  type SearchbarProps,
-} from "../../components/search/Searchbar/Form.tsx";
 import Drawer from "../../components/ui/Drawer.tsx";
 import Icon, { AvailableIcons } from "../../components/ui/Icon.tsx";
-import Modal from "../../components/ui/Modal.tsx";
+
 import {
   HEADER_HEIGHT_DESKTOP,
   HEADER_HEIGHT_MOBILE,
   NAVBAR_HEIGHT_MOBILE,
-  SEARCHBAR_DRAWER_ID,
-  SEARCHBAR_POPUP_ID,
   SIDEMENU_CONTAINER_ID,
   SIDEMENU_DRAWER_ID,
 } from "../../constants.ts";
@@ -49,7 +43,6 @@ export interface SectionProps {
    * @title Searchbar
    * @description Searchbar configuration
    */
-  searchbar: SearchbarProps;
 
   /** @title Logo */
   logo: Logo;
@@ -81,18 +74,9 @@ function onLoad() {
 type Props = Omit<SectionProps, "alert" | "variant">;
 
 const Desktop = (
-  { navItems, logo, searchbar }: Props,
+  { navItems, logo }: Props,
 ) => (
   <>
-    <Modal id={SEARCHBAR_POPUP_ID}>
-      <div
-        class="absolute top-0 bg-transparent container"
-        style={{ marginTop: HEADER_HEIGHT_MOBILE }}
-      >
-        <Searchbar {...searchbar} />
-      </div>
-    </Modal>
-
     <div class="flex flex-col gap-4 py-4 w-full 3xl:max-w-7xl  m-auto px-4 ">
       <div class="grid grid-cols-2 place-items-center pl-5">
         <div class="place-self-start w-full items-center">
@@ -119,18 +103,8 @@ const Desktop = (
   </>
 );
 
-const Mobile = ({ logo, searchbar }: Props) => (
+const Mobile = ({ logo }: Props) => (
   <>
-    <Drawer
-      id={SEARCHBAR_DRAWER_ID}
-      aside={
-        <Drawer.Aside title="Search" drawer={SEARCHBAR_DRAWER_ID}>
-          <div class="w-screen overflow-y-auto">
-            <Searchbar {...searchbar} />
-          </div>
-        </Drawer.Aside>
-      }
-    />
     <Drawer
       id={SIDEMENU_DRAWER_ID}
       aside={

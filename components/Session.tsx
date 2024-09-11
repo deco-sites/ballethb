@@ -319,45 +319,17 @@ interface Props {
 }
 
 export default function Session(
-  { minicart, wishlist, user, mode = "lazy" }: Props,
+  {mode = "lazy" }: Props,
 ) {
   if (mode === "lazy") {
     return (
       <>
-        <Head>
-          <script
-            type="module"
-            dangerouslySetInnerHTML={{ __html: useScript(sdk) }}
-          />
-        </Head>
-        <div hx-trigger="load" hx-post={useComponent(import.meta.url)} />
       </>
     );
   }
 
   return (
     <>
-      {/* Minicart Drawer */}
-      <Drawer
-        id={MINICART_DRAWER_ID}
-        class="drawer-end z-50"
-        aside={
-          <Drawer.Aside title="My Bag" drawer={MINICART_DRAWER_ID}>
-            <div
-              class="h-full flex flex-col bg-base-100 items-center justify-center overflow-auto"
-              style={{
-                minWidth: "calc(min(100vw, 425px))",
-                maxWidth: "425px",
-              }}
-            >
-              <CartProvider cart={minicart!} />
-            </div>
-          </Drawer.Aside>
-        }
-      />
-
-      <WishlistProvider wishlist={wishlist ?? null} />
-      <UserProvider user={user ?? null} />
     </>
   );
 }
