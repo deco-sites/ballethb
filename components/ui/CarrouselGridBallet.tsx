@@ -103,8 +103,8 @@ export default function BannerCard(
                       media="(max-width: 767px)"
                       fetchPriority={lcp ? "high" : "auto"}
                       src={card.image}
-                      width={412}
-                      height={660}
+                      width={800}
+                      height={800}
                     />
                     <Source
                       media="(min-width: 768px)"
@@ -114,7 +114,7 @@ export default function BannerCard(
                       height={275}
                     />
                     <img
-                      class="w-full h-full max-w-[413px] max-h-[275px] hover:scale-125 transition-all duration-700 object-contain"
+                      class="w-full h-full max-w-[413px] lg:max-h-[275px] hover:scale-125 transition-all duration-700 object-contain"
                       loading={lcp ? "eager" : "lazy"}
                       src={card.image}
                       alt={card.alt}
