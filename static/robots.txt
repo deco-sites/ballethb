@@ -3,3 +3,5 @@ Allow: /
 
 User-agent: Googlebot
 Allow: /
+
+Sitemap: https://dominio.com.br/sitemap.xml
