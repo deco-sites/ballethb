@@ -35,16 +35,13 @@
   ],
   "routes": [
     {
-      "__resolveType": "shopify/loaders/proxy.ts",
-      "extraPathsToProxy": [],
-      "includeSiteMap": [],
-      "excludePathsFromDecoSiteMap": []
-    },
-    {
-      "__resolveType": "website/loaders/pages.ts"
-    },
-    {
       "__resolveType": "website/loaders/redirects.ts"
+    },
+    {
+      "__resolveType": "website/flags/everyone.ts",
+      "routes": {
+        "__resolveType": "website/loaders/pages.ts"
+      }
     }
   ],
   "caching": {
