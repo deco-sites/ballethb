@@ -86,11 +86,11 @@
             },
             "showArrows": true
           },
+          "title": "Confira Nossos Cursos",
           "button": {
             "name": "Solicite uma Aula Experimental",
             "number": 86995263835
-          },
-          "title": "Confira Nossos Cursos"
+          }
         },
         "lcp": true
       }
