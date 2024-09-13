@@ -14,7 +14,7 @@ export default {
         fadeInLeft: "fadeInLeft 1s ease-out forwards",
         vibrate: "vibrate 1s ease-in-out infinite 2s", // 0.4s vibração + 2s delay
       },
-      color:{
+      colors:{
         primary: "#CB9C98"
       },
       keyframes: {
