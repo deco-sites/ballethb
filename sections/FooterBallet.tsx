@@ -91,7 +91,7 @@ export default function Footer({
             <ul class="flex gap-4">
           {social && social.length >  0 &&   social.map((item) => (
               <li>
-                <a href={item.link}>
+                <a href={item.link} alt={item.label} >
                     <Icon width={24} height={23} id={item.label} class="w-8 h-[31px] lg:w-6 lg:h-[23px] 2xl:w-[32px] 2xl:h-[31px]" />
                 </a>
               </li>

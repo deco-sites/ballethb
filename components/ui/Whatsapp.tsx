@@ -17,7 +17,7 @@ function WhatsApp({ phone, target = "_blank" }: Props) {
         class="bg-[#CB9C98] text-white p-2 rounded-full shadow-lg animate-vibrate"
         aria-label="Chat on WhatsApp"
       >
-        <Icon id="WhatsApp" class="text-white" size={32} stroke="0.01" />
+        <Icon id="WhatsApp" class="text-white" size={42} stroke="0.01" />
       </button>
     </a>
   );
