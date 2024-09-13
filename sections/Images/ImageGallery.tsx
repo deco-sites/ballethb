@@ -140,7 +140,7 @@ export default function Gallery({
         >
           <span
             style="margin-right:0;"
-            class="text-sm text-white flex items-center justify-center"
+            class="text-sm text-black flex items-center justify-center"
           >
             {button.name}
           </span>

@@ -14,7 +14,7 @@ export default function Button({ number, name }: Props) {
     >
       <span
         style="margin-right:0;"
-        class="text-sm text-white flex items-center justify-center"
+        class="text-sm text-black flex items-center justify-center"
       >
         {name}
       </span>
