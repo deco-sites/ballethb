@@ -48,7 +48,7 @@ export default function BalletDreamSection({
 }: Props) {
   return (
     <div
-      class={`w-full max-w-[1440px] m-auto flex flex-col-reverse justify-center items-center mb-32 gap-8 ${
+      class={`w-full max-w-[1440px] m-auto flex flex-col-reverse justify-center items-center lg:mb-32 gap-8 ${
         imagePosition === "left" ? "md:flex-row" : "md:flex-row-reverse"
       } items-center justify-center space-y-8 md:space-y-0 md:space-x-12 p-8`}
     >
