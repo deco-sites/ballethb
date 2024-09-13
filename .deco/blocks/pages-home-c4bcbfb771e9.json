@@ -2,7 +2,10 @@
   "name": "Home",
   "sections": [
     {
-      "__resolveType": "Header"
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Header"
+      }
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
