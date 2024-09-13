@@ -22,6 +22,11 @@ export interface Card {
 export interface BannerCardProps {
   cards: Card[];
   title?: string;
+    fontSize?: "Small" | "Normal" | "Large";
+    description?: string;
+    alignment?: "center" | "left";
+    colorReverse?: boolean;
+  
   layout?: {
     numberOfSliders?: {
       mobile?: 1 | 2 | 3 | 4 | 5;
@@ -34,6 +39,8 @@ export interface BannerCardProps {
     name: string;
     number: number;
   };
+
+
 }
 
 export interface Props {
@@ -45,7 +52,7 @@ export default function BannerCard(
 ) {
   const id = useId();
 
-  const { cards, layout, button } = bannerGrid;
+  const { cards, layout, button, alignment, colorReverse,description,  title } = bannerGrid;
 
   if (!cards || cards.length === 0) {
     return null;
@@ -70,6 +77,37 @@ export default function BannerCard(
   const device = useDevice(); 
   return (
     <div class="w-full max-w-[1440px] m-auto mb-20 lg:mb-28 flex flex-col items-center justify-center gap-6 lg:my-8 font-soleil lg:px-4 overflow-hidden">
+      
+      {title && (
+          <div
+          class={clx(
+            `flex container flex-col gap-2 pb-4 lg:py-0`,
+            alignment === "left" ? "text-left" : "text-center",
+          )}
+        >
+          {title && (
+            <h2
+              class={clx(
+                "text-2xl font-bold leading-8 lg:leading-10 lg:text-3xl",
+                colorReverse ? "text-black" : "text-black",
+              )}
+            >
+              {title}
+            </h2>
+          )}
+          {description && (
+            <h3
+              class={clx(
+                " text-sm w-[80%] lg:w-[40%] m-auto py-2",
+                colorReverse ? "text-primary-content" : "text-base-content",
+              )}
+            >
+              {description}
+            </h3>
+          )}
+        </div>
+      )}
+
       <div class="w-full">
         <div
           id={id}

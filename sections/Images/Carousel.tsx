@@ -124,7 +124,7 @@ function BannerItem(
             {action.subTitle}
           </span>
           <button
-            class="btn btn-primary btn-outline bg-base-100"
+            class="btn hover:!bg-primary !border-primary text-primary hover:text-white bg-base-100"
             aria-label={action.label}
           >
             {action.label}
