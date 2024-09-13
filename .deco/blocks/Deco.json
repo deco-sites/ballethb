@@ -86,5 +86,6 @@
     "base-300": "#5C5C5C",
     "base-content": "#000000"
   },
-  "colorScheme": "any"
+  "colorScheme": "any",
+  "mode": "dark"
 }
