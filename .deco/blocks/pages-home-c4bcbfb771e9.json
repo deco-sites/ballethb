@@ -16,6 +16,14 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
+        "__resolveType": "site/sections/Content/Title.tsx",
+        "title": "Confira nossos cursos",
+        "fontSize": "Normal"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
         "__resolveType": "Carrousel Grid Mobile"
       }
     },
