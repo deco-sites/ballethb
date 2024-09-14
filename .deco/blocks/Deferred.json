@@ -2,25 +2,24 @@
   "__resolveType": "website/sections/Rendering/Deferred.tsx",
   "sections": [
     {
-      "__resolveType": "Carrousel Grid Mobile"
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "BalletSection"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "carrouselGridBalletHome"
+      }
     },
     {
       "__resolveType": "Imagem Gallery Home"
-    },
-    {
-      "__resolveType": "Footer"
-    },
-    {
-      "__resolveType": "website/sections/Rendering/SingleDeferred.tsx",
-      "section": {
-        "__resolveType": "site/sections/BalletSection.tsx"
-      }
     }
   ],
   "display": true,
   "behavior": {
-    "payload": 2,
-    "type": "scrooll "
+    "type": "scroll"
   },
   "fallbacks": []
 }
