@@ -2,10 +2,11 @@
   "name": "Home",
   "sections": [
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "Header"
-      }
+      "__resolveType": "site/sections/SeoTextCustom.tsx",
+      "seoText": "<h1><strong>Ballet Helly Batista: Tradição, Excelência e Reconhecimento Internacional em Teresina, Piauí</strong></h1><p>Fundada em 1989, a <strong>Escola de Ballet Helly Batista</strong> é uma referência em <strong>ballet clássico</strong> em <strong>Teresina, Piauí</strong>. Com mais de três décadas de história, a escola se dedica à formação de bailarinos com excelência, promovendo a arte do <strong>ballet</strong> e revelando talentos que ganham destaque no Brasil e no exterior.</p><h2><strong>Reconhecimento Nacional e Internacional</strong></h2><p>Ao longo dos anos, a Escola de Ballet Helly Batista conquistou diversos prêmios em festivais nacionais e internacionais. Nossa instituição é reconhecida como uma das principais escolas de <strong>ballet clássico</strong> do Brasil. Nossos alunos têm se destacado em competições ao redor do mundo, muitos recebendo bolsas de estudo em renomadas academias de ballet em <strong>Nova York</strong>, <strong>Rússia</strong> e <strong>Flórida</strong>. Esses bailarinos, formados em instituições internacionais, seguem carreiras de sucesso em companhias de dança de prestígio mundial.</p><h2><strong>Metodologia Vaganova</strong></h2><p>A Escola de Ballet Helly Batista utiliza a <strong>Metodologia Vaganova</strong>, uma abordagem clássica russa de ensino que combina técnica rigorosa e expressão artística. Esta metodologia permite que nossos alunos desenvolvam habilidades técnicas e interpretativas de maneira equilibrada, oferecendo uma formação completa e de qualidade.</p><h2><strong>Nosso Objetivo</strong></h2><p>Nosso objetivo é oferecer uma formação de excelência em <strong>ballet clássico</strong> que desenvolva as habilidades técnicas e artísticas de nossos alunos, inspirando-os a atingir seu máximo potencial. Valorizamos o crescimento pessoal e artístico, preparando os estudantes para se destacarem em <strong>festivais de dança</strong>, competições e carreiras no cenário nacional e internacional. </p><h3>Ballet</h3><h3>Ballet clássico</h3><h3>Escola de ballet</h3><h3>Escola de ballet em Teresina</h3><h3>Teresina</h3><h3>Piauí</h3><h3>Metodologia Vaganova</h3><h3>Ballet internacional</h3><h3>Companhias de dança</h3><h3>Formação em ballet</h3><h3>Competição de ballet</h3><p></p>"
+    },
+    {
+      "__resolveType": "Header"
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
