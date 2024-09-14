@@ -19,7 +19,8 @@
   ],
   "display": true,
   "behavior": {
-    "type": "scroll"
+    "type": "intersection",
+    "payload": "800px"
   },
   "fallbacks": []
 }

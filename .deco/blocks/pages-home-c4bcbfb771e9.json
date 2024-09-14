@@ -20,13 +20,29 @@
       }
     },
     {
-      "__resolveType": "website/sections/Rendering/SingleDeferred.tsx",
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/GoogleMaps.tsx"
+        "__resolveType": "website/sections/Rendering/Deferred.tsx",
+        "sections": [
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "site/sections/GoogleMaps.tsx"
+            }
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "FooterBallet"
+            }
+          }
+        ],
+        "behavior": {
+          "type": "intersection",
+          "payload": "100px"
+        },
+        "display": true
       }
-    },
-    {
-      "__resolveType": "FooterBallet"
     }
   ],
   "__resolveType": "website/pages/Page.tsx",
