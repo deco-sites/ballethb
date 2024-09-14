@@ -44,12 +44,13 @@ export default function BalletDreamSection({
   title = "Ballet is my dream",
   subTitle = "  Ballet My Dream",
   description =
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna a bibendum bibendum, augue magna tincidunt enim, eget ultricies magna augue eget est.",
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna a bibendum bibendum, augue magna tincidunt enim, eget ultricies magna augue eget est.",
 }: Props) {
   return (
     <div
-      class={`w-full max-w-[1440px] m-auto flex flex-col-reverse justify-center items-center lg:mb-32 gap-8 ${imagePosition === "left" ? "md:flex-row" : "md:flex-row-reverse"
-        } items-center justify-center space-y-8 md:space-y-0 md:space-x-12 p-8`}
+      class={`w-full max-w-[1440px] m-auto flex flex-col-reverse justify-center items-center lg:mb-32 gap-8 ${
+        imagePosition === "left" ? "md:flex-row" : "md:flex-row-reverse"
+      } items-center justify-center space-y-8 md:space-y-0 md:space-x-12 p-8`}
     >
       <div class="w-full flex items-center justify-center md:w-1/2">
         <Image
@@ -94,7 +95,7 @@ export default function BalletDreamSection({
 
 export function LoadingFallback() {
   return (
-    <div class="flex h-[835px] lg:h-[400px] justify-center items-center">
+    <div style={{ height: "100vh" }} class="flex justify-center items-center">
       <span class="loading loading-spinner" />
     </div>
   );
