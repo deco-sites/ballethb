@@ -8,10 +8,9 @@ export interface Image {
 }
 
 export interface SocialItem {
-  label: SocialIcons
+  label: SocialIcons;
   link: string;
 }
-
 
 interface FooterProps {
   /**
@@ -49,7 +48,7 @@ interface FooterProps {
 
 export default function Footer({
   title = "CONTACT & FOLLOW US",
-  social, 
+  social,
   address = "186 North Collins Street, Chicago",
   phone = "(847)704-4427",
   hours = "Mon - Sat 8:00 - 19:00",
@@ -89,14 +88,23 @@ export default function Footer({
           <div>
             <h3 class="text-lg font-bold mb-4">Rede Social</h3>
             <ul class="flex gap-4">
-          {social && social.length >  0 &&   social.map((item) => (
-              <li>
-                <a href={item.link} a aria-label={`${item.label} rede social` } >
-                    <Icon width={24} height={23} id={item.label} class="w-8 h-[31px] lg:w-6 lg:h-[23px] 2xl:w-[32px] 2xl:h-[31px]" />
-                </a>
-              </li>
-            ))}
-          </ul>
+              {social && social.length > 0 && social.map((item) => (
+                <li>
+                  <a
+                    href={item.link}
+                    a
+                    aria-label={`${item.label} rede social`}
+                  >
+                    <Icon
+                      width={24}
+                      height={23}
+                      id={item.label}
+                      class="w-8 h-[31px] lg:w-6 lg:h-[23px] 2xl:w-[32px] 2xl:h-[31px]"
+                    />
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>

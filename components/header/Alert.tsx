@@ -1,28 +1,22 @@
 import { useId } from "../../sdk/useId.ts";
 import Icon, { AvailableIcons } from "../ui/Icon.tsx";
-import { useDevice } from "deco/hooks/useDevice.ts";
 import Slider from "../ui/Slider.tsx";
-
+import { useDevice } from "@deco/deco/hooks";
 export interface alert {
   alert: string;
   icon?: AvailableIcons;
 }
-
 export interface Props {
   alerts?: alert[];
   /**
    * @title Autoplay interval
    * @description time (in seconds) to start the carousel autoplay
    */
-
   interval?: number;
 }
-
 function Alert({ interval = 4, alerts = [] }: Props) {
   const id = useId();
-
   const device = useDevice();
-
   return (
     <>
       {device === "desktop"
@@ -73,5 +67,4 @@ function Alert({ interval = 4, alerts = [] }: Props) {
     </>
   );
 }
-
 export default Alert;
