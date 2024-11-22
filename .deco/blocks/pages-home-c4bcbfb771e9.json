@@ -12,10 +12,7 @@
       "__resolveType": "Banner Hero"
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "Deferred"
-      }
+      "__resolveType": "Deferred"
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
