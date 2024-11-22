@@ -6,21 +6,17 @@ import { clx } from "../../sdk/clx.ts";
 import { useId } from "../../sdk/useId.ts";
 import { useSendEvent } from "../../sdk/useSendEvent.ts";
 import BannerCard from "../../components/ui/BannerCard.tsx";
-import { useDevice } from "deco/hooks/useDevice.ts";
-
+import { useDevice } from "@deco/deco/hooks";
 /**
  * @titleBy alt
  */
 export interface Banner {
   /** @description desktop otimized image */
   desktop: ImageWidget;
-
   /** @description mobile otimized image */
   mobile: ImageWidget;
-
   /** @description Image's alt text */
   alt: string;
-
   action?: {
     /** @description when user clicks on the image, go to this link */
     href: string;
@@ -34,17 +30,13 @@ export interface Banner {
     description?: string;
   };
 }
-
 export interface Card {
   image: ImageWidget;
   alt: string;
-
   href: string;
-
   title: string;
   subTitle: string;
 }
-
 export interface BannerCardProps {
   cards: Card[];
   title?: string;
@@ -56,51 +48,37 @@ export interface BannerCardProps {
     showArrows?: boolean;
   };
 }
-
 export interface Props {
   images?: Banner[];
-
   /**
    * @description Check this option when this banner is the biggest image on the screen for image optimizations
    */
   preload?: boolean;
-
   /**
    * @title Autoplay interval
    * @description time (in seconds) to start the carousel autoplay
    */
   interval?: number;
-
   showArrow?: boolean;
-
   showDotz?: boolean;
-
   layout?: {
     bannerGrid?: BannerCardProps;
   };
 }
-
-function BannerItem(
-  { image, lcp }: { image: Banner; lcp?: boolean },
-) {
-  const {
-    alt,
-    mobile,
-    desktop,
-    action,
-  } = image;
+function BannerItem({ image, lcp }: {
+  image: Banner;
+  lcp?: boolean;
+}) {
+  const { alt, mobile, desktop, action } = image;
   const params = { promotion_name: image.alt };
-
   const selectPromotionEvent = useSendEvent({
     on: "click",
     event: { name: "select_promotion", params },
   });
-
   const viewPromotionEvent = useSendEvent({
     on: "view",
     event: { name: "view_promotion", params },
   });
-
   return (
     <a
       {...selectPromotionEvent}
@@ -157,7 +135,6 @@ function BannerItem(
     </a>
   );
 }
-
 function Carousel(
   { images = [], preload, interval, showArrow, layout, showDotz }: Props,
 ) {
@@ -236,9 +213,7 @@ function Carousel(
     </div>
   );
 }
-
 export default Carousel;
-
 export function LoadingFallback() {
   return (
     <div style={{ height: "100vh" }} class="flex justify-center items-center">

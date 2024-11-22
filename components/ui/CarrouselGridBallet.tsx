@@ -4,29 +4,24 @@ import { clx } from "../../sdk/clx.ts";
 import { Picture, Source } from "apps/website/components/Picture.tsx";
 import Slider from "./Slider.tsx";
 import Icon from "./Icon.tsx";
-import { useDevice } from "deco/hooks/useDevice.ts";
-
+import { useDevice } from "@deco/deco/hooks";
 /**
  * @title title
  */
 export interface Card {
   image: ImageWidget;
   alt: string;
-
   href: string;
-
   title: string;
   subTitle: string;
 }
-
 export interface BannerCardProps {
   cards: Card[];
   title?: string;
-    fontSize?: "Small" | "Normal" | "Large";
-    description?: string;
-    alignment?: "center" | "left";
-    colorReverse?: boolean;
-  
+  fontSize?: "Small" | "Normal" | "Large";
+  description?: string;
+  alignment?: "center" | "left";
+  colorReverse?: boolean;
   layout?: {
     numberOfSliders?: {
       mobile?: 1 | 2 | 3 | 4 | 5;
@@ -34,30 +29,23 @@ export interface BannerCardProps {
     };
     showArrows?: boolean;
   };
-
   button?: {
     name: string;
     number: number;
   };
-
-
 }
-
 export interface Props {
   bannerGrid: BannerCardProps;
 }
-
-export default function BannerCard(
-  { bannerGrid, lcp }: Props & { lcp?: boolean },
-) {
+export default function BannerCard({ bannerGrid, lcp }: Props & {
+  lcp?: boolean;
+}) {
   const id = useId();
-
-  const { cards, layout, button, alignment, colorReverse,description,  title } = bannerGrid;
-
+  const { cards, layout, button, alignment, colorReverse, description, title } =
+    bannerGrid;
   if (!cards || cards.length === 0) {
     return null;
   }
-
   const slideDesktop = {
     1: "md:w-full",
     2: "md:w-1/2",
@@ -65,7 +53,6 @@ export default function BannerCard(
     4: "md:w-1/4",
     5: "md:w-1/5",
   };
-
   const slideMobile = {
     1: "w-full",
     2: "w-1/2",
@@ -73,13 +60,11 @@ export default function BannerCard(
     4: "w-1/4",
     5: "w-1/5",
   };
-
-  const device = useDevice(); 
+  const device = useDevice();
   return (
     <div class="w-full max-w-[1440px] m-auto mb-20 lg:mb-28 flex flex-col items-center justify-center gap-6 lg:my-8 font-soleil lg:px-4 overflow-hidden">
-      
       {title && (
-          <div
+        <div
           class={clx(
             `flex container flex-col gap-2 pb-4 lg:py-0`,
             alignment === "left" ? "text-left" : "text-center",
@@ -123,12 +108,8 @@ export default function BannerCard(
                 index={index}
                 class={clx(
                   "carousel-item px-1",
-                  slideDesktop[
-                    layout?.numberOfSliders?.desktop ?? 3
-                  ],
-                  slideMobile[
-                    layout?.numberOfSliders?.mobile ?? 1
-                  ],
+                  slideDesktop[layout?.numberOfSliders?.desktop ?? 3],
+                  slideMobile[layout?.numberOfSliders?.mobile ?? 1],
                 )}
               >
                 <a
@@ -183,11 +164,7 @@ export default function BannerCard(
 
           <div class="col-start-1 col-span-1 row-start-2 row-span-1 z-10 self-center relative">
             <Slider.PrevButton class="sm:flex disabled:invisible btn !bg-primary absolute  left-2 shadow-xl !border-primary !text-white btn-sm btn-circle no-animation">
-              <Icon
-                id="chevron-right"
-                class="rotate-180"
-                size={24}
-              />
+              <Icon id="chevron-right" class="rotate-180" size={24} />
             </Slider.PrevButton>
           </div>
 

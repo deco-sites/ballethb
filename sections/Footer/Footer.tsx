@@ -14,12 +14,10 @@ interface Link extends Item {
   children: Item[];
 }
 
-
 export interface SocialItem {
-  label: SocialIcons
+  label: SocialIcons;
   link: string;
 }
-
 
 /** @titleBy alt */
 interface Social {
@@ -71,10 +69,15 @@ function Footer({
 
         <div class="flex flex-col sm:flex-row gap-12 justify-between items-start sm:items-center">
           <ul class="flex gap-4">
-          {social.map((item) => (
+            {social.map((item) => (
               <li>
                 <a href={item.link}>
-                    <Icon width={24} height={23} id={item.label} class="w-8 h-[31px] lg:w-6 lg:h-[23px] 2xl:w-[32px] 2xl:h-[31px]" />
+                  <Icon
+                    width={24}
+                    height={23}
+                    id={item.label}
+                    class="w-8 h-[31px] lg:w-6 lg:h-[23px] 2xl:w-[32px] 2xl:h-[31px]"
+                  />
                 </a>
               </li>
             ))}

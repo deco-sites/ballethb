@@ -4,21 +4,17 @@ import { clx } from "../../sdk/clx.ts";
 import { Picture, Source } from "apps/website/components/Picture.tsx";
 import Slider from "./Slider.tsx";
 import Icon from "./Icon.tsx";
-import { useScript } from "deco/hooks/useScript.ts";
-
+import { useScript } from "@deco/deco/hooks";
 /**
  * @title title
  */
 export interface Card {
   image: ImageWidget;
   alt: string;
-
   href: string;
-
   title: string;
   subTitle: string;
 }
-
 export interface BannerCardProps {
   cards: Card[];
   title?: string;
@@ -30,22 +26,17 @@ export interface BannerCardProps {
     showArrows?: boolean;
   };
 }
-
 export interface Props {
   bannerGrid: BannerCardProps;
 }
-
-export default function BannerCard(
-  { bannerGrid, lcp }: Props & { lcp?: boolean },
-) {
+export default function BannerCard({ bannerGrid, lcp }: Props & {
+  lcp?: boolean;
+}) {
   const id = useId();
-
   const { cards, layout } = bannerGrid;
-
   if (!cards || cards.length === 0) {
     return null;
   }
-
   const slideDesktop = {
     1: "md:w-full",
     2: "md:w-1/2",
@@ -53,7 +44,6 @@ export default function BannerCard(
     4: "md:w-1/4",
     5: "md:w-1/5",
   };
-
   const slideMobile = {
     1: "w-full",
     2: "w-1/2",
@@ -61,7 +51,6 @@ export default function BannerCard(
     4: "w-1/4",
     5: "w-1/5",
   };
-
   const onload = () => {
     document.addEventListener("DOMContentLoaded", function () {
       const observer = new IntersectionObserver((entries) => {
@@ -72,14 +61,12 @@ export default function BannerCard(
           }
         });
       });
-
       const target = document.querySelector(".triggerSection div");
       if (target) {
         observer.observe(target);
       }
     });
   };
-
   return (
     <div class="triggerSection w-full absolute  bottom-12  lg:-bottom-48  m-auto mt-8 flex flex-col gap-6 lg:my-8 px-3 font-soleil lg:px-4 animate-fadeInLeft">
       <div class="w-full">
@@ -97,12 +84,8 @@ export default function BannerCard(
                 index={index}
                 class={clx(
                   "carousel-item px-1",
-                  slideDesktop[
-                    layout?.numberOfSliders?.desktop ?? 3
-                  ],
-                  slideMobile[
-                    layout?.numberOfSliders?.mobile ?? 1
-                  ],
+                  slideDesktop[layout?.numberOfSliders?.desktop ?? 3],
+                  slideMobile[layout?.numberOfSliders?.mobile ?? 1],
                 )}
               >
                 <a
@@ -154,11 +137,7 @@ export default function BannerCard(
 
           <div class="col-start-1 col-span-1 row-start-2 row-span-1 z-10 self-center">
             <Slider.PrevButton class="sm:flex disabled:invisible btn !bg-primary shadow-xl !border-primary !text-white btn-sm btn-circle no-animation">
-              <Icon
-                id="chevron-right"
-                class="rotate-180"
-                size={24}
-              />
+              <Icon id="chevron-right" class="rotate-180" size={24} />
             </Slider.PrevButton>
           </div>
 

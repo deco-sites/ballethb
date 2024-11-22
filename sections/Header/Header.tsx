@@ -1,14 +1,11 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import type { SiteNavigationElement } from "apps/commerce/types.ts";
 import Image from "apps/website/components/Image.tsx";
-import { useDevice } from "deco/hooks/useDevice.ts";
-import { useSection } from "deco/hooks/useSection.ts";
 import Alert from "../../components/header/Alert.tsx";
 import Menu from "../../components/header/Menu.tsx";
 import NavItem from "../../components/header/NavItem.tsx";
 import Drawer from "../../components/ui/Drawer.tsx";
 import Icon, { AvailableIcons } from "../../components/ui/Icon.tsx";
-
 import {
   HEADER_HEIGHT_DESKTOP,
   HEADER_HEIGHT_MOBILE,
@@ -16,41 +13,33 @@ import {
   SIDEMENU_CONTAINER_ID,
   SIDEMENU_DRAWER_ID,
 } from "../../constants.ts";
-import { useScript } from "deco/hooks/useScript.ts";
-
+import { useDevice, useScript, useSection } from "@deco/deco/hooks";
 export interface Logo {
   src: ImageWidget;
   alt: string;
   width?: number;
   height?: number;
 }
-
 export interface alert {
   alert: string;
   icon?: AvailableIcons;
 }
-
 export interface SectionProps {
   alerts?: alert[];
-
   /**
    * @title Navigation items
    * @description Navigation items used both on mobile and desktop menus
    */
   navItems?: SiteNavigationElement[] | null;
-
   /**
    * @title Searchbar
    * @description Searchbar configuration
    */
-
   /** @title Logo */
   logo: Logo;
-
   /** @hide true */
   variant?: "initial" | "menu";
 }
-
 function onLoad() {
   const alertElement = document.querySelector(".page-alert") as HTMLElement;
   const handleScroll = () => {
@@ -65,17 +54,12 @@ function onLoad() {
     }
   };
   globalThis.addEventListener("scroll", handleScroll);
-
   globalThis.addEventListener("beforeunload", () => {
     globalThis.removeEventListener("scroll", handleScroll);
   });
 }
-
 type Props = Omit<SectionProps, "alert" | "variant">;
-
-const Desktop = (
-  { navItems, logo }: Props,
-) => (
+const Desktop = ({ navItems, logo }: Props) => (
   <>
     <div class="flex flex-col gap-4 py-4 w-full 3xl:max-w-7xl  m-auto px-4 ">
       <div class="grid grid-cols-2 place-items-center pl-5">
@@ -102,7 +86,6 @@ const Desktop = (
     </div>
   </>
 );
-
 const Mobile = ({ logo }: Props) => (
   <>
     <Drawer
@@ -160,7 +143,6 @@ const Mobile = ({ logo }: Props) => (
     </div>
   </>
 );
-
 function Header({
   alerts = [],
   logo = {
@@ -173,7 +155,6 @@ function Header({
   ...props
 }: Props) {
   const device = useDevice();
-
   return (
     <header
       style={{
@@ -196,11 +177,9 @@ function Header({
     </header>
   );
 }
-
 export default function Section({ variant, ...props }: SectionProps) {
   if (variant === "menu") {
     return <Menu navItems={props.navItems ?? []} />;
   }
-
   return <Header {...props} />;
 }

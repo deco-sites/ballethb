@@ -3,35 +3,29 @@ import { Picture, Source } from "apps/website/components/Picture.tsx";
 import Section, {
   type Props as SectionHeaderProps,
 } from "../../components/ui/Section.tsx";
-import { useScript } from "deco/hooks/useScript.ts";
-
+import { useScript } from "@deco/deco/hooks";
 /**
  * @titleBy alt
  */
 interface Banner {
   mobile: ImageWidget;
   desktop?: ImageWidget;
-
   /** @description Image alt texts */
   alt: string;
-
   /** @description Adicione um link */
   href: string;
 }
-
 interface Props extends SectionHeaderProps {
   /**
    * @maxItems 4
    * @minItems 4
    */
   banners?: Banner[];
-
   button?: {
     name: string;
     number: number;
   };
 }
-
 function Banner({ mobile, desktop, alt, href }: Banner) {
   return (
     <a href={href} class="overflow-hidden">
@@ -60,7 +54,6 @@ function Banner({ mobile, desktop, alt, href }: Banner) {
     </a>
   );
 }
-
 export default function Gallery({
   button,
   title,
@@ -110,14 +103,12 @@ export default function Gallery({
           }
         });
       });
-
       const target = document.querySelector(".imageGallery");
       if (target) {
         observer.observe(target);
       }
     });
   };
-
   return (
     <Section.Container class="imageGallery w-full items-center flex-col justify-center max-w-[1440px] m-auto">
       <Section.Header title={title} cta={cta} />

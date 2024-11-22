@@ -1,6 +1,5 @@
-import type { SectionProps } from "deco/mod.ts";
 import Image from "apps/website/components/Image.tsx";
-
+import { type SectionProps } from "@deco/deco";
 export interface layout {
   headerAlignment?: "center" | "left";
   /** @description Default is 12 */
@@ -8,14 +7,12 @@ export interface layout {
   /** @description Up to 6. Default is 4 */
   postsPerLine?: number;
 }
-
 export interface Data {
   id: string;
   permalink: string;
   media_type: string;
   media_url: string;
 }
-
 export interface Props {
   title: string;
   description: string;
@@ -26,28 +23,20 @@ export interface Props {
   facebookToken: string;
   layout?: layout;
 }
-
 export async function loader(
-  {
-    title,
-    description,
-    facebookToken,
-    layout,
-  }: Props,
+  { title, description, facebookToken, layout }: Props,
   _req: Request,
 ) {
   const fields = ["media_url", "media_type", "permalink"];
   const joinFields = fields.join(",");
   const url =
     `https://graph.instagram.com/me/media?access_token=${facebookToken}&fields=${joinFields}`;
-
   const { data } = (await fetch(url).then((r) => r.json()).catch((err) => {
     console.error("error fetching posts from instagram", err);
     return { data: [] };
   })) as {
     data: Data[];
   };
-
   return {
     data: data.slice(0, layout?.numberOfPosts ?? 12),
     title,
@@ -55,7 +44,6 @@ export async function loader(
     layout,
   };
 }
-
 export default function InstagramPosts({
   // title,
   // description,

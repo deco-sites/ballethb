@@ -1,7 +1,6 @@
-import { FnContext, SectionProps } from "deco/mod.ts";
 import { useState } from "preact/compat";
 import Icon, { AvailableIcons } from "../ui/Icon.tsx";
-
+import { type FnContext, type SectionProps } from "@deco/deco";
 export interface Props {
   menuItems: {
     icon: AvailableIcons;
@@ -11,25 +10,19 @@ export interface Props {
     href: string;
   }[];
 }
-
 export function loader(props: Props, req: Request, ctx: FnContext) {
   const url = new URL(req.url);
   const { pathname } = url;
-
   return {
     ...props,
     pathname,
     device: ctx.device,
   };
 }
-
-function AsideMenu({
-  menuItems,
-  pathname: currentUrl,
-  device,
-}: SectionProps<typeof loader>) {
+function AsideMenu(
+  { menuItems, pathname: currentUrl, device }: SectionProps<typeof loader>,
+) {
   const [open, setOpen] = useState(false);
-
   if (device == "mobile") {
     return (
       <>
@@ -70,7 +63,6 @@ function AsideMenu({
                         height={item?.iconHeight ?? 50}
                         strokeWidth={2}
                         viewBox={`0 0 ${item?.iconWidth} ${item?.iconHeight}`}
-                        // className={`${item?.icon === "Manual" ? "shine" : ""}`}
                       />
                     </i>
                     <span
@@ -89,7 +81,6 @@ function AsideMenu({
       </>
     );
   }
-
   return (
     <>
       <ul className="nav institucional-nav__close relative mt-5 font-medium text-left pl-0 lg:top-8">
@@ -114,7 +105,6 @@ function AsideMenu({
                   height={item?.iconHeight ?? 50}
                   strokeWidth={2}
                   viewBox={`0 0 ${item?.iconWidth} ${item?.iconHeight}`}
-                  // className={`${item?.icon === "Manual" ? "shine" : ""}`}
                 />
               </i>
               <span
@@ -131,5 +121,4 @@ function AsideMenu({
     </>
   );
 }
-
 export default AsideMenu;
